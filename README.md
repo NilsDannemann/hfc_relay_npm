@@ -1,7 +1,8 @@
+![alt tag](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/relay_logo.jpg)
+
 # HFC Relay Framework
 HFC Relay Framework (SCSS)
 
-![alt tag](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/relay_logo.jpg)
 <br><hr>
 ## Installation
 

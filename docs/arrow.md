@@ -2,7 +2,7 @@
 Use css-arrows via sass-mixins.<br>
 
 
-
+<br><hr>
 ###Usage
 
 ```sass

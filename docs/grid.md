@@ -8,14 +8,14 @@ This approach has the following advantages over conventional grids:<br>
 - **Simplicity** - keep all styles & behavior in one place (separation of concerns)
 
 
-
+<br><hr>
 ###Requirements
-- Global Border Box ([recommended usage](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/))
+- Global Border Box (activated by default)
 - Flexbox (use ```@include flexbox();``` on containing element)
 - Row containers (working to get rid of those)
 
 
-
+<br><hr>
 ###Usage
 
 ```sass
@@ -25,7 +25,7 @@ This approach has the following advantages over conventional grids:<br>
 ```
 
 
-
+<br><hr>
 ###Adding Gutters
 
 By default a column has no gutters. You can add gutters like so:
@@ -46,7 +46,7 @@ You can also specify your own gutters like so:
 ```
 
 
-
+<br><hr>
 ###Beta: Adding Behavior
 
 By default a column has no special behavior. You can add two different behaviors like so:
@@ -60,7 +60,7 @@ By default a column has no special behavior. You can add two different behaviors
 
 
 
-
+<br><hr>
 ###Beta: Fixed & Auto Columns
 
 Fixed Width-Columns can be used like so:

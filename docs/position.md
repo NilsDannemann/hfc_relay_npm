@@ -2,7 +2,7 @@
 Use position relative, absolute or fixed in shorthand.<br>
 
 
-
+<br><hr>
 ###Usage
 
 ```sass

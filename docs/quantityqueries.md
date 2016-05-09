@@ -2,7 +2,7 @@
 Change styles based on the quantity of Elements.<br>
 **Example Usecase:** Too many Elements in a horizontal Navigation
 
-
+<br><hr>
 ###Usage
 
 ```sass

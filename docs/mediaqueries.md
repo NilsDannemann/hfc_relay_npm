@@ -9,7 +9,7 @@ Four sets of sass-mixins let you control the responsive flow of your document:
 You can also pass a px value instead of a breakpoint-name.
 
 
-
+<br><hr>
 ###Usage
 
 **Above** a certain breakpoint (mobile-first)
@@ -49,7 +49,7 @@ You can also pass a px value instead of a breakpoint-name.
 ```
 
 
-
+<br><hr>
 ###Placement
 You can use the breakpoint-mixins in two ways:
 

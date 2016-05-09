@@ -1,17 +1,13 @@
 # HFC Relay Framework
 
 
-<br>
-![alt tag](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/devices.jpg)
-<br>
-<hr>
 ## Installation
 
 #### Via npm
 1. Install: ```npm install hfc-relay --save-dev;```
 1. Import: ```@import 'node_modules/hfc-relay/src/hfc-relay.scss';```
 
-
+<br><hr>
 ## Usage
 
 #### Layout

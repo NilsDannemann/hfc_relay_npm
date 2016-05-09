@@ -1,0 +1,30 @@
+/* =======================================*/
+/*
+/* BUTTON
+/*
+/* =======================================*/
+
+// Smart-Mixin: Calculate Background Color & Hover + fitting Text Color
+@mixin calculate-background-text($color) {
+	background: $color;
+	@if (lightness($color) > 59%) {
+		color: $color-black;
+		&:hover, &.is-active {background: darken($color, 15%)};
+	}
+	@else {
+		color: #fff;
+		&:hover, &.is-active {background: darken($color, 10%)};
+	}
+}
+
+@mixin button($color: $color-brand) {
+	@include calculate-background-text($color);
+	@include transition();
+	display: inline-block;
+	text-align: center;
+	padding: ($whitespace*0.5) $whitespace;
+	border-radius: $border-radius;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}

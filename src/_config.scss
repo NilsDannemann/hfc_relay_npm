@@ -1,0 +1,130 @@
+/* =======================================*/
+/*
+/* COLORS
+/*
+/* =======================================*/
+
+$color-black        : #333333 						!default;
+$color-spaceblack   : #171F2D 						!default;
+$color-grey         : #eeeeee 						!default;
+$color-spacegrey    : #a7adba 						!default;
+
+$color-red          : #F44336 						!default;
+$color-pink         : #E91E63 						!default;
+$color-purple       : #9C27B0 						!default;
+
+$color-lightblue    : #03A9F4 						!default;
+$color-blue         : #2196F3 						!default;
+$color-darkblue     : #1e70cd 						!default;
+
+$color-indigo       : #3F51B5 						!default;
+$color-cyan         : #00BCD4 						!default;
+$color-teal         : #009688 						!default;
+
+$color-green        : #4CAF50 						!default;
+$color-lightgreen   : #8BC34A 						!default;
+$color-lime         : #CDDC39 						!default;
+
+$color-yellow       : #FFEB3B 						!default;
+$color-amber        : #FFC107 						!default;
+$color-orange       : #FF9800 						!default;
+
+// Hooks
+$color-brand	    : $color-blue					!default;
+$color-headline 	: $color-black 					!default;
+$color-text     	: lighten($color-black, 15%) 	!default;
+
+
+/* =======================================*/
+/*
+/* LAYOUT
+/*
+/* =======================================*/
+
+$whitespace          : 20px 						!default;
+$width-sidebar       : 275px 						!default;
+$global-border-box   : true 						!default;
+$breakpoints: (
+  'xs'  : 0px,
+  's'   : 410px,
+  'm'   : 650px,
+  'l'   : 800px,
+  'xl'  : 960px,
+  'xxl' : 1400px
+) 													!default;
+
+// Experimental: Element Queries
+// Requirements:
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.1.0/EQCSS.min.js"></script>
+$use-elementqueries  : false 						!default;
+
+// Devmode 
+$devmode-overlay     : false 						!default;
+$devmode-breakpoints : false 						!default;
+
+
+/* =======================================*/
+/*
+/* TYPOGRAPHY
+/*
+/* =======================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,600,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
+
+$font-family-headline : 'Raleway', sans-serif 		!default;
+$font-family-text     : 'Roboto', sans-serif 		!default;
+$font-family 		  : $font-family-text 			!default;
+
+$font-size      : 14px 								!default;
+$line-height    : 1.6 								!default;
+
+
+/* =======================================*/
+/*
+/* USER INTERFACE
+/*
+/* =======================================*/
+
+// Border
+$border: 1px solid darken($color-grey, 5%) 			!default;
+
+// Border-Radius
+$border-radius-xs  : 2px 							!default;
+$border-radius-s   : 4px 							!default;
+$border-radius-m   : 6px 							!default;
+$border-radius-l   : 8px 							!default;
+$border-radius-xl  : 10px 							!default;
+$border-radius-xxl : 12px 							!default;
+
+$border-radius     : $border-radius-s 				!default;
+
+// Box-Shadow
+$box-shadow-xs  : 0px 1px 3px rgba(0, 0, 0, 0.2)	!default;
+$box-shadow-s   : 0px 2px 5px rgba(0, 0, 0, 0.2)	!default;
+$box-shadow-m   : 0px 4px 9px rgba(0, 0, 0, 0.2)	!default;
+$box-shadow-l   : 0px 8px 18px rgba(0, 0, 0, 0.2)	!default;
+$box-shadow-xl  : 0px 16px 32px rgba(0, 0, 0, 0.2)	!default;
+$box-shadow-xxl : 0px 32px 64px rgba(0, 0, 0, 0.2)	!default;
+
+$box-shadow     : $box-shadow-s						!default;
+
+// Transition
+$transition-type-sine  : ease-out-sine 				!default;
+$transition-type-quad  : ease-out-quad 				!default;
+$transition-type-cubic : ease-out-cubic 			!default;
+$transition-type-quart : ease-out-quart 			!default;
+$transition-type-quint : ease-out-quint 			!default;
+$transition-type-expo  : ease-out-expo 				!default;
+$transition-type-circ  : ease-out-circ 				!default;
+$transition-type-back  : ease-out-back 				!default;
+
+$transition-duration   : 450ms						!default;
+$transition-type       : $transition-type-quint		!default;
+
+
+
+
+
+
+

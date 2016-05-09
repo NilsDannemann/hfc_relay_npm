@@ -1,0 +1,67 @@
+/* =======================================*/
+/*
+/* DEVMODE
+/* 
+/* =======================================*/
+@if $devmode-overlay == true {
+	* {background: rgba($color-spaceblack, 0.075) !important;}
+}
+@if $devmode-breakpoints == true {
+	html:before,
+	html:after,
+	body:before,
+	body:after {
+		font-family: $font-family;
+		color: $color-black;
+		border-radius: $border-radius;
+		padding: ($whitespace*0.25) ($whitespace*0.5);
+		box-shadow: $box-shadow;
+		font-size: 13px;
+		text-align: right;
+		display: block;
+		background: rgba(255, 255, 255, 0.8);
+		position: absolute;
+		right: $whitespace;
+		z-index: 100000;
+		pointer-events: none;
+	}
+	html:before {
+		bottom: $whitespace;
+		font-size: 16px;
+		padding: ($whitespace*0.5) ($whitespace);
+		text-decoration: underline;
+		@media only screen and (min-width: #{map-get($breakpoints, xxl)}) {content: "Breakpoint: XXL";}
+		@media only screen and (min-width: #{map-get($breakpoints, xl)}) and (max-width: #{map-get($breakpoints, xxl)}) {content: "Breakpoint: XL";}
+		@media only screen and (min-width: #{map-get($breakpoints, l)}) and (max-width: #{map-get($breakpoints, xl)}) {content: "Breakpoint: L";}
+		@media only screen and (min-width: #{map-get($breakpoints, m)}) and (max-width: #{map-get($breakpoints, l)}) {content: "Breakpoint: M";}
+		@media only screen and (min-width: #{map-get($breakpoints, s)}) and (max-width: #{map-get($breakpoints, m)}) {content: "Breakpoint: S";}
+		@media only screen and (min-width: #{map-get($breakpoints, xs)}) and (max-width: #{map-get($breakpoints, s)}) {content: "Breakpoint: XS";}
+	}
+	html:after {
+		bottom: ($whitespace*4);
+		@media only screen and (min-width: #{map-get($breakpoints, xxl)}) {content: "respond-at(xxl) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, xl)}) and (max-width: #{map-get($breakpoints, xxl)}) {content: "respond-at(xl) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, l)}) and (max-width: #{map-get($breakpoints, xl)}) {content: "respond-at(l) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, m)}) and (max-width: #{map-get($breakpoints, l)}) {content: "respond-at(m) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, s)}) and (max-width: #{map-get($breakpoints, m)}) {content: "respond-at(s) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, xs)}) and (max-width: #{map-get($breakpoints, s)}) {content: "respond-at(xs) ✓";}
+	}
+	body:before {
+		bottom: ($whitespace*5.5);
+		@media only screen and (min-width: #{map-get($breakpoints, xs)}) {content: "respond-above(xs) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, s)}) {content: "respond-above(s) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, m)}) {content: "respond-above(m) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, l)}) {content: "respond-above(l) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, xl)}) {content: "respond-above(xl) ✓";}
+		@media only screen and (min-width: #{map-get($breakpoints, xxl)}) {content: "respond-above(xxl) ✓";}
+	}
+	body:after {
+		bottom: ($whitespace*7);
+		@media only screen and (max-width: #{map-get($breakpoints, xxl)}) {content: "respond-below(xxl) ✓";}
+		@media only screen and (max-width: #{map-get($breakpoints, xl)}) {content: "respond-below(xl) ✓";}
+		@media only screen and (max-width: #{map-get($breakpoints, l)}) {content: "respond-below(l) ✓";}
+		@media only screen and (max-width: #{map-get($breakpoints, m)}) {content: "respond-below(m) ✓";}
+		@media only screen and (max-width: #{map-get($breakpoints, s)}) {content: "respond-below(s) ✓";}
+		@media only screen and (max-width: #{map-get($breakpoints, xs)}) {content: "respond-below(xs) ✓";}
+	}
+}

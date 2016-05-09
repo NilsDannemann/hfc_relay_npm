@@ -1,0 +1,42 @@
+/* =======================================*/
+/*
+/* QUANTITY QUERIES
+/* 
+/* =======================================*/
+
+/* =======================================*/
+/* QUANTITY AT - use: @include quantity-at(4) {...}; 
+/* =======================================*/
+@mixin quantity-at($number: 4) {
+	&:nth-last-child(n + #{$number}):nth-last-child(-n + #{$number}):first-child, 
+	&:nth-last-child(n + #{$number}):nth-last-child(-n + #{$number}):first-child ~ & { 
+		@content;
+	}
+}
+/* =======================================*/
+/* QUANTITY ABOVE - use: @include quantity-above(4) {...}; 
+/* =======================================*/
+@mixin quantity-above($number: 4) {
+	&:nth-last-child(n + #{$number + 1}), 
+	&:nth-last-child(n + #{$number + 1}) ~ & {
+		@content;
+	}
+}
+/* =======================================*/
+/* QUANTITY BELOW - use: @include quantity-below(4) {...}; 
+/* =======================================*/
+@mixin quantity-below($number: 4) {
+	&:nth-last-child(-n + #{$number - 1}):first-child, 
+	&:nth-last-child(-n + #{$number - 1}):first-child ~ & {
+		@content;
+	}
+}
+/* =======================================*/
+/* QUANTITY BETWEEN - use: @include quantity-between(2, 4) {...}; 
+/* =======================================*/
+@mixin quantity-between($number1: 2, $number2: 4) {
+	&:nth-last-child(n + #{$number1}):nth-last-child(-n + #{$number2}):first-child, 
+	&:nth-last-child(n + #{$number1}):nth-last-child(-n + #{$number2}):first-child ~ & { 
+		@content;
+	}
+}

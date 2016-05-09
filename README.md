@@ -10,8 +10,8 @@ Install the npm package from your console.
 npm install hfc-relay --save-dev
 ```
 
-####2. Create config File<br> 
-Create a `config.scss` with [this content](src/_config.scss) (but remove all the `!default` statements.) <br>
+####2. Create config<br> 
+Create a `config.scss` with [this content](src/_config.scss) (but remove all the `!default` statements) <br>
 
 In there you can now:
 - safely override any defaults
@@ -19,7 +19,7 @@ In there you can now:
 - toggle features like `$devmode-breakpoints`
 
 
-####3. Import Files<br> 
+####3. Import<br> 
 Import both Files.
 ```sass
 // HFC Relay - Main File

@@ -10,7 +10,9 @@ npm install hfc-relay --save-dev
 ```
 
 ####Create config<br> 
-[config](src/_config.scss)
+Create your own `config.scss` with [this content](src/_config.scss). <br>
+You can now safely override any defaults with your own.
+
 
 ####Import Files<br> 
 ```sass

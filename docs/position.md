@@ -1,4 +1,3 @@
-![alt tag](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/devices.jpg)
 # Position Shorthand
 Use position relative, absolute or fixed in shorthand.<br>
 

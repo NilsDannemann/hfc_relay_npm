@@ -9,10 +9,8 @@ HFC Relay Framework (SCSS)
 npm install hfc-relay --save-dev
 ```
 
-####Create config.scss<br> 
-```sass
-npm install hfc-relay --save-dev;
-```
+####Create config<br> 
+[config](sry/_config.scss)
 
 ####Import Files<br> 
 ```sass

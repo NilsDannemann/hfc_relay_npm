@@ -11,7 +11,7 @@ This approach has the following advantages over conventional grids:<br>
 <br><hr>
 ###Requirements
 - Global Border Box (activated by default)
-- Flexbox (use ```@include flexbox();``` on containing element)
+- Flexbox (use ```@include flexbox();``` on **parent element**)
 - Row containers (working to get rid of those)
 
 

@@ -4,22 +4,22 @@ HFC Relay Framework (SCSS)
 <br><hr>
 ## Installation
 
-####Install<br>
+####1. Install<br>
 ```sass
 npm install hfc-relay --save-dev
 ```
 
-####Create config<br> 
+####2. Create config File<br> 
 Create your own `config.scss` with [this content](src/_config.scss). <br>
 You can now safely override any defaults with your own.
 
 
-####Import Files<br> 
+####3. Import Files<br> 
 ```sass
-// HFC Relay - Main
+// HFC Relay - Main File
 @import 'node_modules/hfc-relay/src/hfc-relay.scss';
-// HFC Relay - Config Overrides
-@import 'config.scss';
+// HFC Relay - Your config File
+@import 'path/to/config.scss';
 ```
 
 

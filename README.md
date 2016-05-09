@@ -10,8 +10,12 @@ npm install hfc-relay --save-dev
 ```
 
 ####2. Create config File<br> 
-Create your own `config.scss` with [this content](src/_config.scss). <br>
-You can now safely override any defaults with your own.
+Create a `config.scss` with [this content](src/_config.scss). <br>
+
+In the `config.scss` you can now:
+- import/use different fonts 
+- override any defaults with your own
+- toggle features like `$devmode-breakpoints`
 
 
 ####3. Import Files<br> 

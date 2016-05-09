@@ -81,12 +81,13 @@ Auto Width-Columns can be used like so:
 
 
 
-
+<br><hr>
 ###Snippets
 The Snippets for Sublime Text are optional but make the workflow much faster. <br>
 **Install:** [Download](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/snippets.zip) the Snippets and place them in your `(path_to_sublime)/Packages/User` folder.<br>
 **Usage:** Just type `column` and hit `TAB` to place your include.
 
+<br><hr>
 ###Playground
 You can test the mixin over here:<br>
 ![alt tag](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/code-playground.svg)

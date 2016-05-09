@@ -10,19 +10,19 @@
 <hr>
 # Installation
 
-## Via npm
+### Via npm
 1. Install: ```npm install hfc-relay --save-dev;```
 1. Import: ```@import 'node_modules/hfc-relay/src/hfc-relay.scss';```
 
 
 # Usage
 
-## Layout
+### Layout
 - [The Grid](docs/grid.md)
 - [Mediaqueries](docs/mediaqueries.md)
 - [Quantityqueries](docs/quantityqueries.md)
 
-## Helpers
+### Helpers
 - [Container](docs/container.md)
 - [Position](docs/position.md)
 - [Arrow](docs/arrow.md)

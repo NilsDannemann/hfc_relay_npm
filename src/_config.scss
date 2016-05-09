@@ -3,7 +3,6 @@
 /* COLORS
 /*
 /* =======================================*/
-
 $color-black        : #333333                       !default;
 $color-spaceblack   : #171F2D                       !default;
 $color-grey         : #eeeeee                       !default;
@@ -41,6 +40,7 @@ $color-text         : lighten($color-black, 15%)    !default;
 /*
 /* =======================================*/
 
+// Globals
 $whitespace          : 20px                         !default;
 $width-sidebar       : 275px                        !default;
 $global-border-box   : true                         !default;
@@ -53,8 +53,7 @@ $breakpoints: (
   'xxl' : 1400px
 )                                                   !default;
 
-// Experimental: Element Queries
-// Requirements:
+// Element Queries (experimental)
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.1.0/EQCSS.min.js"></script>
 $use-elementqueries  : false                        !default;
 
@@ -69,15 +68,16 @@ $devmode-breakpoints : false                        !default;
 /*
 /* =======================================*/
 
+// Font Imports
 @import url(https://fonts.googleapis.com/css?family=Raleway:500,600,400);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
 
+// Globals
 $font-family-headline : 'Raleway', sans-serif       !default;
 $font-family-text     : 'Roboto', sans-serif        !default;
 $font-family          : $font-family-text           !default;
-
-$font-size      : 14px                              !default;
-$line-height    : 1.6                               !default;
+$font-size            : 14px                        !default;
+$line-height          : 1.6                         !default;
 
 
 /* =======================================*/

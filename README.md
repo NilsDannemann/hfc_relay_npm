@@ -23,7 +23,7 @@ In there you can now:
 Import both Files.
 ```sass
 // HFC Relay - Main File
-@import 'node_modules/hfc-relay/src/hfc-relay.scss';
+@import 'node_modules/hfc-relay/hfc-relay.scss';
 // HFC Relay - Your config File
 @import 'path/to/config.scss';
 ```

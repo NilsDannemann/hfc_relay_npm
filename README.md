@@ -1,6 +1,7 @@
 # HFC Relay Framework
+HFC Relay Framework (SCSS)
 
-
+<br><hr>
 ## Installation
 
 #### Via npm

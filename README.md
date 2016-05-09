@@ -20,7 +20,7 @@ In there you can now:
 
 
 ####3. Import<br> 
-Import both Files.
+Import both Files in your sass.
 ```sass
 // HFC Relay - Main File
 @import 'node_modules/hfc-relay/hfc-relay.scss';

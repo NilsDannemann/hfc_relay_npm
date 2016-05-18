@@ -43,8 +43,8 @@
 			// BEHAVIOR: DOUBLING
 			@if ($behavior == doubling) {
 				@include respond-below(xl) 	{width: calc(99.999999% * ((#{$fraction}) * 2) - (#{$gutter} - #{$gutter} * ((#{$fraction}) * 2))) $important;}
-				@include respond-below(m) 	{width: calc(99.999999% * ((#{$fraction}) / ((#{$fraction}) * 2)) - (#{$gutter} - #{$gutter} * ((#{$fraction}) / ((#{$fraction}) * 2)))) $important;}
-				@include respond-below(s) 	{width: 100% $important;}
+				@include respond-below(l) 	{width: calc(99.999999% * ((#{$fraction}) / ((#{$fraction}) * 2)) - (#{$gutter} - #{$gutter} * ((#{$fraction}) / ((#{$fraction}) * 2)))) $important;}
+				@include respond-below(m) 	{width: 100% $important;}
 			}
 		}
 		// PX WIDTH (-> no gutters possible)
@@ -58,7 +58,7 @@
 	}
 	// BEHAVIOR: STACKING
 	@if ($behavior == stacking) {
-		@include respond-below(s) {
+		@include respond-below(m) {
 			flex: auto;
 			width: 100% $important;
 			margin-left: 0 !important;

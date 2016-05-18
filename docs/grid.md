@@ -9,8 +9,20 @@ This approach has the following advantages over conventional grids:<br>
 
 
 <br><hr>
+###Quick Example
+```sass
+.parent {
+	@include flexbox();
+
+	.children {
+		@include column(1/4);
+	}
+}
+```
+
+
+<br><hr>
 ###Requirements
-- Global Border Box (activated by default)
 - Flexbox (use ```@include flexbox();``` on **parent element**)
 - Row containers (working to get rid of those)
 
@@ -62,10 +74,10 @@ Simply pass a $important variable.
 By default a column has no special behavior. You can add two different behaviors like so:
 
 ```sass
-@include column(1/6, $gutter: true, $behavior: stacking);
-@include column(1/6, $gutter: true, $behavior: doubling);
+@include column(1/6, $gutter: true, $behavior: stacking);	// works
+@include column(1/6, $gutter: true, $behavior: doubling);	// has some bugs
 ```
-**Stacking:** Columns use the full width on smallest breakpoint (common pattern) <br>
+**Stacking:** Columns use the full width on the m breakpoint (common pattern) <br>
 **Doubling:** Columns automatically respond to certain breakpoints (try it out to better understand)
 
 

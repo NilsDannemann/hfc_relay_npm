@@ -47,6 +47,16 @@ You can also specify your own gutters like so:
 
 
 <br><hr>
+###Using !important
+
+Simply pass a $important variable.
+
+```sass
+@include column(1/6, $important: true); 	// adds the !important
+```
+
+
+<br><hr>
 ###Beta: Adding Behavior
 
 By default a column has no special behavior. You can add two different behaviors like so:

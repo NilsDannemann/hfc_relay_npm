@@ -3,7 +3,7 @@
 /* GRID
 /*
 /* =======================================*/
-@mixin column($fraction: null, $gutter: null, $behavior: null, $important: true) {
+@mixin column($fraction: null, $gutter: null, $behavior: null, $important: null) {
 	@if ($important == true) {
 		$important: !important;
 	}

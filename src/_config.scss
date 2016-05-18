@@ -69,16 +69,27 @@ $devmode-breakpoints : false                        !default;
 /*
 /* =======================================*/
 
-// Font Imports
+// Font-Family-Imports
 @import url(https://fonts.googleapis.com/css?family=Raleway:500,600,400);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300);
 
-// Globals
+// Font-Families
 $font-family-headline : 'Raleway', sans-serif       !default;
 $font-family-text     : 'Roboto', sans-serif        !default;
 $font-family          : $font-family-text           !default;
-$font-size            : 14px                        !default;
-$line-height          : 1.6                         !default;
+
+// Font-Size
+$font-size-xs  : 10px                               !default;
+$font-size-s   : 12px                               !default;
+$font-size-m   : 14px                               !default;
+$font-size-l   : 16px                               !default;
+$font-size-xl  : 20px                               !default;
+$font-size-xxl : 28px                               !default;
+
+$font-size     : $font-size-m                       !default;
+
+// Line-Height
+$line-height   : 1.6                                !default;
 
 
 /* =======================================*/

@@ -13,7 +13,7 @@ npm install hfc-relay --save-dev
 ```
 
 ####2. Create config<br> 
-Create a `config.scss` with [this content](src/_hfc-relay-config.scss) (but remove all the `!default` statements) <br>
+Create a `_hfc-relay-config.scss` with [this content](src/_hfc-relay-config.scss) (but remove all the `!default` statements) <br>
 
 In there you can now:
 - safely override any defaults

@@ -22,12 +22,13 @@ In there you can now:
 
 
 ####3. Import<br> 
-Import both Files in your sass.
+Import both Files in your sass in this order.
 ```sass
-// HFC Relay - Your config File
-@import 'path/to/hfc-relay-config.scss';
-// HFC Relay - Main File
+// HFC Relay
+@import 'path/to/your/hfc-relay-config.scss';
 @import 'node_modules/hfc-relay/hfc-relay.scss';
+
+// Your other imports
 ```
 
 That's it. <br>

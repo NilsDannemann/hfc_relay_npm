@@ -24,10 +24,10 @@ In there you can now:
 ####3. Import<br> 
 Import both Files in your sass.
 ```sass
-// HFC Relay - Main File
-@import 'node_modules/hfc-relay/hfc-relay.scss';
 // HFC Relay - Your config File
 @import 'path/to/config.scss';
+// HFC Relay - Main File
+@import 'node_modules/hfc-relay/hfc-relay.scss';
 ```
 
 That's it. <br>

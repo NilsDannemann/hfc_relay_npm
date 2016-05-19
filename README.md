@@ -28,7 +28,7 @@ Import both Files in your sass in this order.
 @import 'path/to/your/hfc-relay-config.scss';
 @import 'node_modules/hfc-relay/hfc-relay.scss';
 
-// Your other imports
+// Your other imports below
 ```
 
 That's it. <br>

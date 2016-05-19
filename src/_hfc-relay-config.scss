@@ -44,7 +44,6 @@ $color-text         : lighten($color-black, 15%)    !default;
 // Globals
 $whitespace          : 20px                         !default;
 $width-sidebar       : 325px                        !default;
-$global-border-box   : true                         !default;
 $breakpoints: (
   'xs'  : 0px,
   's'   : 410px,
@@ -54,13 +53,17 @@ $breakpoints: (
   'xxl' : 1400px
 )                                                   !default;
 
-// Element Queries (experimental)
+// Experimental Features
+// Element Queries
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.1.0/EQCSS.min.js"></script>
-$use-elementqueries  : false                        !default;
+$use-elementqueries    : false                      !default;
+
+// Transition Everything
+$transition-everything : false                      !default;
 
 // Devmode 
-$devmode-overlay     : false                        !default;
-$devmode-breakpoints : false                        !default;
+$devmode-overlay       : false                      !default;
+$devmode-breakpoints   : false                      !default;
 
 
 /* =======================================*/

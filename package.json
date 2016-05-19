@@ -1,6 +1,6 @@
 {
   "name": "hfc-relay",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "HFC Relay Framework (SCSS)",
   "main": "index.js",
   "scripts": {

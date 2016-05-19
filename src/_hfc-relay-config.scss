@@ -54,14 +54,14 @@ $breakpoints: (
 )                                                   !default;
 
 // Experimental Features
-// Element Queries
+// Element Queries (needs testing)
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.1.0/EQCSS.min.js"></script>
 $use-elementqueries    : false                      !default;
 
-// Transition Everything
+// Transition Everything (works, but not performant)
 $transition-everything : false                      !default;
 
-// Devmode 
+// Devmode (works)
 $devmode-overlay       : false                      !default;
 $devmode-breakpoints   : false                      !default;
 

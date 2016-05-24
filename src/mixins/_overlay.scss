@@ -5,9 +5,9 @@
 /* =======================================*/
 
 @mixin overlay(
-  $overlay:             $global-overlay,
-  $overlay-color:       $global-overlay-color,
-  $overlay-opacity:     $global-overlay-opacity,
+  $overlay:            $global-overlay,
+  $overlay-color:      $global-overlay-color,
+  $overlay-opacity:    $global-overlay-opacity,
 
   $icon:               $global-overlay-icon,
   $icon-width:         $global-overlay-icon-width,

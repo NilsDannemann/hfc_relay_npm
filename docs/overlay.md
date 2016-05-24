@@ -45,4 +45,4 @@ Add an animated hover-overlay to a container.<br>
 ###Snippets
 The Snippets for Sublime Text are optional but make the workflow much faster. <br>
 **Install:** [Download](https://dl.dropboxusercontent.com/u/7534528/HFC/Relay/snippets.zip) the Snippets and place them in your `(path_to_sublime)/Packages/User` folder.<br>
-**Usage:** Just type `arrow` and hit `TAB` to place your include.
+**Usage:** Just type `overlay` and hit `TAB` to place your include.

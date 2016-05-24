@@ -30,11 +30,11 @@ Add an animated hover-overlay to a container.<br>
   $overlay-color: $color-brand, 
   $overlay-opacity: 0.85, 
   $icon: '\f0da', 						// set css :after content, or set to 'false' for no icon
-  $icon-width: 40px,					// or use presets: xs, s, m, l, xl, xxl
-  $icon-height: 40px,					// or use presets: xs, s, m, l, xl, xxl
   $icon-color: #fff,
   $icon-font-family: 'FontAwesome',
   $icon-font-size: 12px,				// or use presets: xs, s, m, l, xl, xxl
+  $icon-width: 40px,					// or use presets: xs, s, m, l, xl, xxl
+  $icon-height: 40px,					// or use presets: xs, s, m, l, xl, xxl
   $icon-border: 2px solid #fff,
   $icon-border-radius: 100%
 ); 

@@ -123,7 +123,6 @@ $box-shadow-xl  : 0px 16px 32px rgba(0, 0, 0, 0.2) !default;
 $box-shadow-xxl : 0px 32px 64px rgba(0, 0, 0, 0.2) !default;
 
 $box-shadow-soft : 0px 0px 35px rgba(0, 0, 0, 0.05) !default; //For: better highlight white boxes on white ground
-
 $box-shadow     : $box-shadow-s !default;
 
 // Transition
@@ -138,3 +137,17 @@ $transition-type-back  : ease-out-back !default;
 
 $transition-duration   : 450ms !default;
 $transition-type       : $transition-type-quint !default;
+
+// Overlay
+$global-overlay						: true !default;
+$global-overlay-color				: $color-brand !default;
+$global-overlay-opacity				: 0.85 !default;
+
+$global-overlay-icon				: '\f0da' !default;
+$global-overlay-icon-font-family	: 'FontAwesome' !default;
+$global-overlay-icon-color			: #fff !default;
+$global-overlay-icon-width			: ($whitespace*3) !default;
+$global-overlay-icon-height			: ($whitespace*3) !default;
+$global-overlay-icon-font-size		: $font-size-m !default;
+$global-overlay-icon-border			: 2px solid $global-overlay-icon-color !default;
+$global-overlay-icon-border-radius	: 100% !default;

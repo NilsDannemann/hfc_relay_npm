@@ -5,17 +5,18 @@
 /* =======================================*/
 
 @mixin overlay(
-  $overlay: true,
-  $overlay-color: $color-brand,
-  $overlay-opacity: 0.85,
-  $icon: '\f0da',
-  $icon-font-family: FontAwesome,
-  $icon-color: #fff,
-  $icon-width: ($whitespace*3),
-  $icon-height: ($whitespace*3),
-  $icon-font-size: $font-size-l,
-  $icon-border: 2px solid $icon-color,
-  $icon-border-radius: 100%
+  $overlay:             $global-overlay,
+  $overlay-color:       $global-overlay-color,
+  $overlay-opacity:     $global-overlay-opacity,
+
+  $icon:               $global-overlay-icon,
+  $icon-width:         $global-overlay-icon-width,
+  $icon-height:        $global-overlay-icon-height,
+  $icon-color:         $global-overlay-icon-color,
+  $icon-font-family:   $global-overlay-icon-font-family,
+  $icon-font-size:     $global-overlay-icon-font-size,
+  $icon-border:        $global-overlay-icon-border,
+  $icon-border-radius: $global-overlay-icon-border-radius
   ) {
 
   position: relative; //For: Overlay & Icon
@@ -38,6 +39,34 @@
 
   // OVERLAY ICON
   @if ($icon != null or $icon != false) {
+    // Icon width & height presets
+    @if ($icon-width == xs)   {$icon-width: ($global-overlay-icon-width*0.45)}
+    @if ($icon-height == xs)  {$icon-height: ($global-overlay-icon-height*0.45)}
+    @if ($icon-width == s)    {$icon-width: ($global-overlay-icon-width*0.65)}
+    @if ($icon-height == s)   {$icon-height: ($global-overlay-icon-height*0.65)}
+    @if ($icon-width == m)    {$icon-width: $global-overlay-icon-width}
+    @if ($icon-height == m)   {$icon-height: $global-overlay-icon-height}
+    @if ($icon-width == l)    {$icon-width: ($global-overlay-icon-width*1.25)}
+    @if ($icon-height == l)   {$icon-height: ($global-overlay-icon-height*1.25)}
+    @if ($icon-width == xl)   {$icon-width: ($global-overlay-icon-width*1.45)}
+    @if ($icon-height == xl)  {$icon-height: ($global-overlay-icon-height*1.45)}
+    @if ($icon-width == xxl)  {$icon-width: ($global-overlay-icon-width*1.65)}
+    @if ($icon-height == xxl) {$icon-height: ($global-overlay-icon-height*1.65)}
+    // Icon font-size presets
+    @if ($icon-font-size == xs)  {$icon-font-size: $font-size-xs}
+    @if ($icon-font-size == s)   {$icon-font-size: $font-size-s}
+    @if ($icon-font-size == m)   {$icon-font-size: $font-size-m}
+    @if ($icon-font-size == l)   {$icon-font-size: $font-size-l}
+    @if ($icon-font-size == xl)  {$icon-font-size: $font-size-xl}
+    @if ($icon-font-size == xxl) {$icon-font-size: $font-size-xxl}
+    // Icon border-radius presets
+    @if ($icon-border-radius == xs)  {$icon-border-radius: $border-radius-xs}
+    @if ($icon-border-radius == s)   {$icon-border-radius: $border-radius-s}
+    @if ($icon-border-radius == m)   {$icon-border-radius: $border-radius-m}
+    @if ($icon-border-radius == l)   {$icon-border-radius: $border-radius-l}
+    @if ($icon-border-radius == xl)  {$icon-border-radius: $border-radius-xl}
+    @if ($icon-border-radius == xxl) {$icon-border-radius: $border-radius-xxl}
+
     &:after {
       @include flexbox($align: center, $justify: center);
       @include transition();

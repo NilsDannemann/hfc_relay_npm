@@ -1,0 +1,64 @@
+/* =======================================*/
+/*
+/* OVERLAY
+/*
+/* =======================================*/
+
+@mixin overlay(
+  $overlay: true,
+  $overlay-color: $color-brand,
+  $overlay-opacity: 0.85,
+  $icon: '\f0da',
+  $icon-font-family: FontAwesome,
+  $icon-color: #fff,
+  $icon-width: ($whitespace*3),
+  $icon-height: ($whitespace*3),
+  $icon-font-size: $font-size-l,
+  $icon-border: 2px solid $icon-color,
+  $icon-border-radius: 100%
+  ) {
+
+  position: relative; //For: Overlay & Icon
+
+  // OVERLAY DIMMER
+  @if ($overlay == true) {
+    &:before {
+      @include transition();
+      @include position(absolute, $top:0, $right:0, $bottom:0, $left:0);
+      content: '';
+      background: $overlay-color;
+      opacity: 0;
+    }
+    &:hover {
+      &:before{
+        opacity: $overlay-opacity;
+      }
+    }
+  }
+
+  // OVERLAY ICON
+  @if ($icon != null or $icon != false) {
+    &:after {
+      @include flexbox($align: center, $justify: center);
+      @include transition();
+      @include position(absolute, $top:calc(50% - #{($icon-height*0.5)}), $left:calc(50% - #{($icon-width*0.5)}));
+      content: $icon;
+      font-family: $icon-font-family;
+      font-size: $icon-font-size;
+      height: $icon-height;
+      width: $icon-width;
+      color: $icon-color;
+      border: $icon-border;
+      border-radius: $icon-border-radius;
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    &:hover {
+      &:after{
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+

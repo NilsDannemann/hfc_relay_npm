@@ -6,15 +6,15 @@ Add an animated hover-overlay to a container.<br>
 ###Basic Usage
 
 ```sass
-// simple implementation
-@include overlay(); 
+// Simple Implementation
+@include overlay(); 										// uses global variables from the config
 
 // How to change the Overlay Color?
-@include overlay($color: #fff);								// hex, rgba or $variable
+@include overlay($color: #fff);
 
 // How to change the Icon?
-@include overlay($icon: '\f002'); 							// will be placed in :after content: ''
-@include overlay($icon-color: #fff); 						// hex, rgba or $variable
+@include overlay($icon: '\f002'); 							// set css :after content, or set to 'false' for no icon
+@include overlay($icon-color: #fff);
 
 // How to change the Icon font-size?
 @include overlay($icon-font-size: 20px); 					// or use presets: xs, s, m, l, xl, xxl
@@ -30,7 +30,7 @@ Add an animated hover-overlay to a container.<br>
   $overlay: true,						// set to 'false' for no overlay
   $overlay-color: $color-brand, 
   $overlay-opacity: 0.85, 
-  $icon: '\f0da', 						// set to 'false' for no icon
+  $icon: '\f0da', 						// set css :after content, or set to 'false' for no icon
   $icon-width: 40px,					// or use presets: xs, s, m, l, xl, xxl
   $icon-height: 40px,					// or use presets: xs, s, m, l, xl, xxl
   $icon-color: #fff,

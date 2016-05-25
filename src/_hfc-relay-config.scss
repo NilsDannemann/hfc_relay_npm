@@ -143,8 +143,7 @@ $global-overlay						: true !default;
 $global-overlay-color				: $color-brand !default;
 $global-overlay-opacity				: 0.85 !default;
 
-$global-overlay-icon				: '\f0da' !default;
-$global-overlay-icon-font-family	: 'FontAwesome' !default;
+$global-overlay-icon				: 'fa-caret-right' !default;
 $global-overlay-icon-color			: #fff !default;
 $global-overlay-icon-width			: ($whitespace*3) !default;
 $global-overlay-icon-height			: ($whitespace*3) !default;

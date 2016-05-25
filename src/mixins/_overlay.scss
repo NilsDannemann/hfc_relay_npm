@@ -8,17 +8,15 @@
   $overlay:            $global-overlay,
   $overlay-color:      $global-overlay-color,
   $overlay-opacity:    $global-overlay-opacity,
-
   $icon:               $global-overlay-icon,
   $icon-width:         $global-overlay-icon-width,
   $icon-height:        $global-overlay-icon-height,
   $icon-color:         $global-overlay-icon-color,
-  $icon-font-family:   $global-overlay-icon-font-family,
   $icon-font-size:     $global-overlay-icon-font-size,
   $icon-border:        $global-overlay-icon-border,
   $icon-border-radius: $global-overlay-icon-border-radius
   ) {
-
+  
   position: relative; //For: Overlay & Icon
 
   // OVERLAY DIMMER
@@ -39,6 +37,27 @@
 
   // OVERLAY ICON
   @if ($icon != null or $icon != false) {
+    // Check which Iconset is neccessary
+    $iconset: $icons-fontawesome !default;
+    $icon-font-family: 'FontAwesome' !default;
+
+    $iconset-check: str-slice($icon, 0, 3);
+    @if ($iconset-check == 'fa-')       {
+      $use-fontawesome: true; // globally activate FontAwesome
+      $iconset: $icons-fontawesome;
+      $icon-font-family: 'FontAwesome';
+    }
+    @else if ($iconset-check == 'li-')  {
+      $use-linearicons: true; // globally activate LinearIcons
+      $iconset: $icons-linearicons;
+      $icon-font-family: 'LinearIcons';
+    }
+    @else if  ($iconset-check == 'ion')  {
+      $use-ionicons: true; // globally activate IonIcons
+      $iconset: $icons-ionicons;
+      $icon-font-family: 'IonIcons';
+    }
+    
     // Icon width & height presets
     @if ($icon-width == xs)   {$icon-width: ($global-overlay-icon-width*0.45)}
     @if ($icon-height == xs)  {$icon-height: ($global-overlay-icon-height*0.45)}
@@ -66,12 +85,14 @@
     @if ($icon-border-radius == l)   {$icon-border-radius: $border-radius-l}
     @if ($icon-border-radius == xl)  {$icon-border-radius: $border-radius-xl}
     @if ($icon-border-radius == xxl) {$icon-border-radius: $border-radius-xxl}
-
+    
     &:after {
       @include flexbox($align: center, $justify: center);
       @include transition();
       @include position(absolute, $top:calc(50% - #{($icon-height*0.5)}), $left:calc(50% - #{($icon-width*0.5)}));
-      content: $icon;
+
+      content: map-get($iconset, $icon);
+
       font-family: $icon-font-family;
       font-size: $icon-font-size;
       height: $icon-height;

@@ -13,7 +13,10 @@ Add an animated hover-overlay to a container.<br>
 @include overlay($color: #fff);
 
 // How to change the Icon?
-@include overlay($icon: '\f002');			// set css :after content, or set to 'false' for no icon
+@include overlay($icon: 'fa-search');     // use fontawesome
+@include overlay($icon: 'ion-search');    // use ionicons
+@include overlay($icon: 'li-magnifier');  // use linearicons
+@include overlay($icon: false);	          // disable icon
 
 // How to change the Icon font-size?
 @include overlay($icon-font-size: 20px);	// or use presets: xs, s, m, l, xl, xxl
@@ -29,7 +32,7 @@ Add an animated hover-overlay to a container.<br>
   $overlay: true,						// set to 'false' for no overlay
   $overlay-color: $color-brand, 
   $overlay-opacity: 0.85, 
-  $icon: '\f0da', 						// set css :after content, or set to 'false' for no icon
+  $icon: 'fa-search', 						// set css :after content, or set to 'false' for no icon
   $icon-color: #fff,
   $icon-font-family: 'FontAwesome',
   $icon-font-size: 12px,				// or use presets: xs, s, m, l, xl, xxl

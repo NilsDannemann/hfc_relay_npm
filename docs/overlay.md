@@ -1,6 +1,6 @@
 # Overlay
 Add an animated hover-overlay to a container.<br>
-
+You don't have to import anything to use Icons from different sets.
 
 <br><hr>
 ###Basic Usage

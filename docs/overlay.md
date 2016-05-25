@@ -7,7 +7,7 @@ Add an animated hover-overlay to a container.<br>
 
 ```sass
 // Simple Implementation
-@include overlay();							// uses global variables from the config
+@include overlay();                       // uses global variables from the config
 
 // How to change the Overlay Color?
 @include overlay($color: #fff);
@@ -19,25 +19,25 @@ Add an animated hover-overlay to a container.<br>
 @include overlay($icon: false);	          // disable icon
 
 // How to change the Icon font-size?
-@include overlay($icon-font-size: 20px);	// or use presets: xs, s, m, l, xl, xxl
+@include overlay($icon-font-size: 20px);  // or use presets: xs, s, m, l, xl, xxl
 
 // How to change width?
-@include overlay($icon-width: 40px);		// or use presets: xs, s, m, l, xl, xxl
+@include overlay($icon-width: 40px);      // or use presets: xs, s, m, l, xl, xxl
 ```
 
 ###All the Options
 
 ```sass
 @include overlay(
-  $overlay: true,						// set to 'false' for no overlay
+  $overlay: true,                   // set to 'false' for no overlay
   $overlay-color: $color-brand, 
   $overlay-opacity: 0.85, 
-  $icon: 'fa-search', 						// set css :after content, or set to 'false' for no icon
+  $icon: 'fa-search',               // set css :after content, or set to 'false' for no icon
   $icon-color: #fff,
   $icon-font-family: 'FontAwesome',
-  $icon-font-size: 12px,				// or use presets: xs, s, m, l, xl, xxl
-  $icon-width: 40px,					// or use presets: xs, s, m, l, xl, xxl
-  $icon-height: 40px,					// or use presets: xs, s, m, l, xl, xxl
+  $icon-font-size: 12px,            // or use presets: xs, s, m, l, xl, xxl
+  $icon-width: 40px,                // or use presets: xs, s, m, l, xl, xxl
+  $icon-height: 40px,               // or use presets: xs, s, m, l, xl, xxl
   $icon-border: 2px solid #fff,
   $icon-border-radius: 100%
 ); 

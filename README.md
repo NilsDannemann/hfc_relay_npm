@@ -48,12 +48,14 @@ Happy coding.
 #### Animation-Layer
 - [Overlay](docs/overlay.md)
 
-#### Helpers - Mixed
+#### Helpers
+
+###### Mixed
 - [Position](docs/position.md)
 - [Arrow](docs/arrow.md)
 - [Button](docs/button.md)
 - [Icon](docs/icon.md)
 
-#### Helpers - Form Elements
+###### Form Elements
 - [Checkbox](docs/checkbox.md)
 - [Radiobutton](docs/radiobutton.md)

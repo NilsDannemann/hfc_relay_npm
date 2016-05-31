@@ -2,6 +2,21 @@
 Creaes an animated Checkbox via ::before or ::after.<br>
 
 <br><hr>
+###Example
+```html
+<label class="my-label">
+	<input class="my-checkbox" type="checkbox"/>
+	Checkbox
+</label>
+```
+```sass
+.my-checkbox {
+  @include checkbox();
+}
+```
+
+
+<br><hr>
 ###Basic Usage
 
 ```sass

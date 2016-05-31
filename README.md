@@ -48,4 +48,5 @@ Happy coding.
 - [Position](docs/position.md)
 - [Arrow](docs/arrow.md)
 - [Button](docs/button.md)
+- [Icon](docs/icon.md)
 - [Overlay](docs/overlay.md)

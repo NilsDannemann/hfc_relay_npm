@@ -37,24 +37,7 @@
 
   // OVERLAY ICON
   @if ($icon != null or $icon != false) {
-    // Check which Iconset is neccessary
-    $iconset: $iconmap-fontawesome !default;
-    $icon-font-family: 'FontAwesome' !default;
 
-    $iconset-check: str-slice($icon, 0, 3);
-    @if ($iconset-check == 'fa-')       {
-      $iconset: $iconmap-fontawesome;
-      $icon-font-family: 'FontAwesome';
-    }
-    @else if ($iconset-check == 'li-')  {
-      $iconset: $iconmap-linearicons;
-      $icon-font-family: 'LinearIcons';
-    }
-    @else if  ($iconset-check == 'ion')  {
-      $iconset: $iconmap-ionicons;
-      $icon-font-family: 'IonIcons';
-    }
-    
     // Icon width & height presets
     @if ($icon-width == xs)   {$icon-width: ($global-overlay-icon-width*0.45)}
     @if ($icon-height == xs)  {$icon-height: ($global-overlay-icon-height*0.45)}
@@ -68,13 +51,6 @@
     @if ($icon-height == xl)  {$icon-height: ($global-overlay-icon-height*1.45)}
     @if ($icon-width == xxl)  {$icon-width: ($global-overlay-icon-width*1.65)}
     @if ($icon-height == xxl) {$icon-height: ($global-overlay-icon-height*1.65)}
-    // Icon font-size presets
-    @if ($icon-font-size == xs)  {$icon-font-size: $font-size-xs}
-    @if ($icon-font-size == s)   {$icon-font-size: $font-size-s}
-    @if ($icon-font-size == m)   {$icon-font-size: $font-size-m}
-    @if ($icon-font-size == l)   {$icon-font-size: $font-size-l}
-    @if ($icon-font-size == xl)  {$icon-font-size: $font-size-xl}
-    @if ($icon-font-size == xxl) {$icon-font-size: $font-size-xxl}
     // Icon border-radius presets
     @if ($icon-border-radius == xs)  {$icon-border-radius: $border-radius-xs}
     @if ($icon-border-radius == s)   {$icon-border-radius: $border-radius-s}
@@ -83,18 +59,16 @@
     @if ($icon-border-radius == xl)  {$icon-border-radius: $border-radius-xl}
     @if ($icon-border-radius == xxl) {$icon-border-radius: $border-radius-xxl}
     
+    // Icon Output
+    @include icon($icon: $icon, $color: $icon-color, $font-size: $icon-font-size);
+
     &:after {
       @include flexbox($align: center, $justify: center);
       @include transition();
       @include position(absolute, $top:calc(50% - #{($icon-height*0.5)}), $left:calc(50% - #{($icon-width*0.5)}));
 
-      content: map-get($iconset, $icon);
-
-      font-family: $icon-font-family;
-      font-size: $icon-font-size;
       height: $icon-height;
       width: $icon-width;
-      color: $icon-color;
       border: $icon-border;
       border-radius: $icon-border-radius;
       opacity: 0;

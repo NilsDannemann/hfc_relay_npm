@@ -34,7 +34,6 @@ You don't have to import anything to use Icons from different sets.
   $overlay-opacity: 0.85, 
   $icon: 'fa-search',               // set css :after content, or set to 'false' for no icon
   $icon-color: #fff,
-  $icon-font-family: 'FontAwesome',
   $icon-font-size: 12px,            // or use presets: xs, s, m, l, xl, xxl
   $icon-width: 40px,                // or use presets: xs, s, m, l, xl, xxl
   $icon-height: 40px,               // or use presets: xs, s, m, l, xl, xxl

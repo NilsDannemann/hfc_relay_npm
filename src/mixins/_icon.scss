@@ -1,0 +1,48 @@
+/* =======================================*/
+/*
+/* ICON
+/*
+/* =======================================*/
+
+@mixin icon(
+  $icon: 'fa-caret-right',
+  $color: $color-brand,
+  $font-size: $font-size-m,
+  $position: 'after'
+) {
+  @if ($icon != null or $icon != false) {
+    // Set defaults
+    $icon-font-family: 'FontAwesome' !default;
+    $iconset: $iconmap-fontawesome !default;
+    
+    // Check which iconset is neccessary
+    $iconset-check: str-slice($icon, 0, 3);
+    @if ($iconset-check == 'fa-') {
+      $iconset: $iconmap-fontawesome;
+      $icon-font-family: 'FontAwesome';
+    }
+    @else if ($iconset-check == 'li-') {
+      $iconset: $iconmap-linearicons;
+      $icon-font-family: 'LinearIcons';
+    }
+    @else if ($iconset-check == 'ion') {
+      $iconset: $iconmap-ionicons;
+      $icon-font-family: 'IonIcons';
+    }
+    // Icon font-size presets
+    @if ($font-size == xs)  {$font-size: $font-size-xs}
+    @if ($font-size == s)   {$font-size: $font-size-s}
+    @if ($font-size == m)   {$font-size: $font-size-m}
+    @if ($font-size == l)   {$font-size: $font-size-l}
+    @if ($font-size == xl)  {$font-size: $font-size-xl}
+    @if ($font-size == xxl) {$font-size: $font-size-xxl}
+
+    // Icon Output
+    &::#{$position} {
+      content: map-get($iconset, $icon);
+      font-family: $icon-font-family;
+      color: $color;
+      font-size: $font-size;
+    }
+  }
+}

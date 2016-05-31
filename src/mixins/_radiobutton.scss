@@ -1,0 +1,60 @@
+/* =======================================*/
+/*
+/* CHECKBOX
+/*
+/* =======================================*/
+
+@mixin radiobutton(
+	$color:			$color-brand,
+	$border:		2px solid $color-grey,
+	$border-radius:	100%
+	) {
+
+	margin: 0 ($whitespace*0.5) 0 ($whitespace*0.25);
+	position: relative;
+	cursor: pointer;
+
+	// RADIOBUTTON BOX
+	&:after {
+	  @include transition();
+	  cursor: pointer;
+	  content: '';
+	  width: $whitespace;
+	  height: $whitespace;
+
+	  background: #fff;
+
+	  border-radius: $border-radius;
+	  border: $border;
+
+	  position: absolute;
+	  top: (-$whitespace*0.20);
+	  left: (-$whitespace*0.25);
+	}
+	&:checked,
+	&:hover {
+	  &:after {background: $color-grey;}
+	}
+
+	// RADIOBUTTON SYMBOL
+	&:before {
+	  @include transition();
+	  transform: scale(0);
+
+	  content: '';
+	  width: ($whitespace*0.5);
+	  height: ($whitespace*0.5);
+
+	  border-radius: 100%;
+	  background: $color;
+
+	  position: absolute;
+	  top: ($whitespace*0.05);
+	  z-index: 1;
+	}
+	&:checked {
+	  &:before {
+	    transform: scale(1);
+	  }
+	}
+}

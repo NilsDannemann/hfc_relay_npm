@@ -2,6 +2,19 @@
 Creaes an animated Radiobutton via ::before or ::after.<br>
 
 <br><hr>
+###Example
+```html
+<label class="my-radiobutton">
+	<input class="my-radiobutton" type="radio" name="radiogroup"/>
+	Checkbox
+</label>
+```
+```sass
+.my-radiobutton {
+  @include radiobutton();
+}
+
+<br><hr>
 ###Basic Usage
 
 ```sass

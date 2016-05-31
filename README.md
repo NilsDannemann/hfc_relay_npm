@@ -38,21 +38,22 @@ Happy coding.
 <br><hr>
 ## Usage
 
-#### Layout
+#### Structure-Layer
+- [Container](docs/container.md)
 - [The Grid](docs/grid.md)
 - [Mediaqueries](docs/mediaqueries.md)
 - [Quantityqueries](docs/quantityqueries.md)
 
-#### Helpers
-- [Container](docs/container.md)
+
+#### Animation-Layer
+- [Overlay](docs/overlay.md)
+
+#### Helpers - Mixed
 - [Position](docs/position.md)
 - [Arrow](docs/arrow.md)
 - [Button](docs/button.md)
 - [Icon](docs/icon.md)
 
-#### Animation-Layer
-- [Overlay](docs/overlay.md)
-
-#### Form Elements
+#### Helpers - Form Elements
 - [Checkbox](docs/checkbox.md)
 - [Radiobutton](docs/radiobutton.md)

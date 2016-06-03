@@ -12,6 +12,7 @@
 		// FRACTION WIDTH
 		@if ($fraction != null and $fraction <= 1) {
 			width: calc(99.999999% * (#{$fraction})) $important;
+			flex: 0 1 auto; // For: overriding auto-width-columns
 			margin-bottom: 0;
 			// BEHAVIOR: DOUBLING
 			@if ($behavior == 'doubling') {
@@ -23,6 +24,7 @@
 		// PX WIDTH
 		@if ($fraction != null and $fraction > 1) {
 			width: $fraction $important;
+			flex: 0 1 auto; // For: overriding auto-width-columns
 			margin-bottom: 0;
 		}
 		// AUTO WIDTH
@@ -39,6 +41,7 @@
 		// FRACTION WIDTH
 		@if ($fraction != null and $fraction <= 1) {
 			width: calc(99.999999% * (#{$fraction}) - (#{$gutter} - #{$gutter} * (#{$fraction}))) $important;
+			flex: 0 1 auto; // For: overriding auto-width-columns
 			margin-bottom: $gutter;
 			// BEHAVIOR: DOUBLING
 			@if ($behavior == doubling) {
@@ -50,6 +53,7 @@
 		// PX WIDTH (-> no gutters possible)
 		@if ($fraction != null and $fraction > 1) {
 			width: $fraction $important;
+			flex: 0 1 auto; // For: overriding auto-width-columns
 		}
 		// AUTO WIDTH (-> no gutters possible)
 		@if ($fraction == null) {

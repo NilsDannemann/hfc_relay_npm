@@ -8,8 +8,11 @@
   $icon: 'fa-caret-right',
   $color: $color-brand,
   $font-size: $font-size-m,
-  $position: 'after'
-) {
+  $position: 'after',
+  $margin: null,
+  $padding: null
+  ) {
+
   @if ($icon != null or $icon != false) {
     // Set defaults
     $icon-font-family: 'FontAwesome' !default;
@@ -43,6 +46,8 @@
       font-family: $icon-font-family;
       color: $color;
       font-size: $font-size;
+      @if ($margin != null) {margin: $margin;}
+      @if ($padding != null) {padding: $padding;}
     }
   }
 }

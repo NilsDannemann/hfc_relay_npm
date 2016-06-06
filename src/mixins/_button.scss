@@ -4,27 +4,68 @@
 /*
 /* =======================================*/
 
-// Smart-Mixin: Calculate Background Color & Hover + fitting Text Color
-@mixin calculate-background-text($color) {
-	background: $color;
-	@if (lightness($color) > 59%) {
-		color: $color-black;
-		&:hover, &.is-active {background: darken($color, 15%)};
-	}
-	@else {
-		color: #fff;
-		&:hover, &.is-active {background: darken($color, 10%)};
-	}
-}
+@mixin button(
+	$size: m,
+	$style: filled,
+	$background: $color-brand, 
+	$color: #fff, 
+	$font-size: $font-size-m, 
+	$border-radius: $border-radius,
+	$padding: ($whitespace*0.5) $whitespace,
+	$border: $border
+	) {
 
-@mixin button($color: $color-brand) {
-	@include calculate-background-text($color);
+	// Size presets
+	@if ($size == xs)  {
+		$font-size: $font-size-xs; 
+		$padding: ($whitespace*0.35) ($whitespace*0.75);
+	}
+	@if ($size == s)   {
+		$font-size: $font-size-s; 
+		$padding: ($whitespace*0.45) ($whitespace*0.85);
+	}
+	@if ($size == m)   {
+		$font-size: $font-size-m; 
+		$padding: ($whitespace*0.5) $whitespace;
+	}
+	@if ($size == l)   {
+		$font-size: $font-size-l; 
+		$padding: ($whitespace*0.65) ($whitespace*1.15);
+	}
+	@if ($size == xl)  {
+		$font-size: $font-size-xl; 
+		$padding: ($whitespace*0.75) ($whitespace*1.25);
+	}
+	@if ($size == xxl) {
+		$font-size: $font-size-xxl; 
+		$padding: ($whitespace*0.85) ($whitespace*1.35);
+	}
+	
+	// Button Styles
 	@include transition();
 	display: inline-block;
 	text-align: center;
-	padding: ($whitespace*0.5) $whitespace;
+	font-size: $font-size;
+	padding: $padding;
 	border-radius: $border-radius;
-	border: none;
 	cursor: pointer;
 	outline: none;
+	
+	// Style presets
+	@if ($style == filled) {
+		color: $color;
+		background: $background; 
+		border: none;
+		&:hover, &.current, &.is-active, &.active {background: darken($background, 15%);};
+	}
+	@if ($style == outline) {
+		color: $background;
+		border: 1px solid $background; 
+		&:hover, &.current, &.is-active, &.active {background: $background; color: #fff;};
+	}
+	@if ($style == outline-white) {
+		color: $color-text;
+		border: $border; 
+		&:hover, &.current, &.is-active, &.active {color: $color-brand;};
+	}
 }

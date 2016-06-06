@@ -29,6 +29,8 @@ Automatically detects the used Icon-Set.
   $color: #fff,
   $font-size: 14px,                 // or use presets: xs, s, m, l, xl, xxl
   $position: 'after',               // before/after
+  $margin: 0 10px 0 0,              // adds margin
+  $padding: 5px,               		// adds padding
 ); 
 ```
 

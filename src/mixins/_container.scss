@@ -5,25 +5,6 @@
 /* =======================================*/
 
 @mixin container() {
-	$max-width: 0;
-	@if map-has-key($breakpoints, xxl) {
-		$max-width: map-get($breakpoints, xxl);
-	} @else if map-has-key($breakpoints, xl) {
-		$max-width: map-get($breakpoints, xl);
-	} @else if map-has-key($breakpoints, l) {
-		$max-width: map-get($breakpoints, l);
-	} @else if map-has-key($breakpoints, m) {
-		$max-width: map-get($breakpoints, m);
-	} @else if map-has-key($breakpoints, s) {
-		$max-width: map-get($breakpoints, s);
-	} @else if map-has-key($breakpoints, xs) {
-		$max-width: map-get($breakpoints, xs);
-	}
-
-	@if ($max-width == 0) {
-		@error "Unknown max-width: no breakpoints defined";
-	}
-
-	max-width: $max-width;
+	max-width: map-get($breakpoints, xxl);
 	margin: 0 auto;
 }

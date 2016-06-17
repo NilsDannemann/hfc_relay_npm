@@ -10,7 +10,7 @@
 	$border-radius:	0px
 	) {
 
-	margin: 0 ($whitespace*0.5) 0 ($whitespace*0.25);
+	margin: 0 (20px*0.5) 0 (20px*0.25); // Note: fixed px-values neccessary
 	position: relative;
 	cursor: pointer;
 
@@ -19,16 +19,16 @@
 		@include transition();
 		cursor: pointer;
 		content: '';
-		width: $whitespace;
-		height: $whitespace;
+		width: 20px; // Note: fixed px-values neccessary
+		height: 20px; // Note: fixed px-values neccessary
 
 		border: $border;
 		border-radius: $border-radius;
 		background: #fff;
 
 		position: absolute;
-		top: (-$whitespace*0.25);
-		left: (-$whitespace*0.25);
+		top: (-20px*0.25); // Note: fixed px-values neccessary
+		left: (-20px*0.25); // Note: fixed px-values neccessary
 	}
 	&:checked,
 	&:hover {
@@ -41,15 +41,15 @@
 		transform: rotate(-25deg) scale(0);
 
 		content: '';
-		width: $whitespace;
-		height: ($whitespace*0.4);
+		width: 20px; // Note: fixed px-values neccessary
+		height: (20px*0.4); // Note: fixed px-values neccessary
 
 		border: 2px solid $color;
 		border-top-style: none;
 		border-right-style: none;
 
 		position: absolute;
-		top: (-$whitespace*0.25);
+		top: (-20px*0.25); // Note: fixed px-values neccessary
 	}
 	&:checked {
 		&:after {

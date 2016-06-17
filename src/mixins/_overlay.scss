@@ -60,7 +60,7 @@
     @if ($icon-border-radius == xxl) {$icon-border-radius: $border-radius-xxl}
     
     // Icon Output
-    @include icon($icon: $icon, $color: $icon-color, $font-size: $icon-font-size);
+    @include icon($icon: $icon, $color: $icon-color, $font-size: $icon-font-size, $position: after);
 
     &:after {
       @include flexbox($align: center, $justify: center);

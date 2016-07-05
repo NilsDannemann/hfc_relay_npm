@@ -30,7 +30,7 @@
 		// AUTO WIDTH
 		@if ($fraction == null) {
 			flex: 1;
-			width: 0; //For: Swiper Slider
+			overflow: auto; //For: Fixes Swiper Slider bug in content-inner
 			margin-bottom: 0;
 		}
 	}

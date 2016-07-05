@@ -43,6 +43,7 @@ $color-text         : lighten($color-black, 15%) !default;
 
 // Globals
 $whitespace    : 20px !default;
+$ws            : $whitespace; // Whitespace Shorthand
 $width-sidebar : 325px !default;
 $breakpoints: (
   'xs'  : 0px,

@@ -25,13 +25,13 @@
 		@if ($fraction != null and $fraction > 1) {
 			width: $fraction $important;
 			margin-bottom: 0;
-			// flex: 0 1 auto; // For: overriding auto-width-columns
+			// flex: 0 1 auto; // For: overriding auto-width-columns <- dosn't work!
 		}
 		// AUTO WIDTH
 		@if ($fraction == null) {
 			flex: 1;
 			margin-bottom: 0;
-			// width: 0; //For: Fixes Swiper Slider bug in content-inner
+			// width: 0; //For: Fixes Swiper Slider bug in content-inner <- dosn't work!
 		}
 	}
 	// GRID: WITH GUTTERS (accepts $whitespace variable, px or % as gutter)

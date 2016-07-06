@@ -1,7 +1,23 @@
 #Button
 **Basic Button**
 ```sass
-@include button();		// accepts $color variable
+@include button();
+```
+
+###All the Options
+
+```sass
+@include checkbox(
+  $size: xl, // optional presets: xs, s, m, l, xl, xxl
+  $style: outlined, // filled or outlined (default: filled)
+  $color: #fff, 
+  $background: $color-brand, 
+  $font-size: $font-size-m, 
+  $padding: 10px 20px,
+  $margin: 0 0 10px 0,
+  $border: $border, 
+  $border-radius: $border-radius,
+); 
 ```
 
 <br><hr>
